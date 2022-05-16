@@ -1,0 +1,347 @@
+.menu {
+    border-radius: 5px;
+    width: 1217px;
+    height: 60px;
+    flex-grow: 0;
+    margin-top: 5px;
+    box-shadow: 4px -6px 12px 0 rgba(0, 0, 0, 0.18);
+    border: solid 1px #eee;
+    background-color: #eafffb;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.Opciones-menu {
+    height: 60px;
+    margin: -1px 0% -13px 4%;
+    padding: 3.3px 0 0;
+    display: inherit;
+    float: left;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+
+#cronicas div {
+    display: inherit;
+    margin-top: 10px;
+
+}
+
+#volante div {
+    display: inherit;
+    margin-top: 10px;
+
+}
+
+#aviso div {
+    display: inherit;
+    margin-top: 10px;
+
+}
+
+#consulta div {
+    display: inherit;
+    margin-top: 10px;
+
+}
+
+.selectCronica {
+    background-color: #9c731a;
+    height: 5px;
+    width: 138px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    position: absolute;
+    margin-top: -8px !important;
+    visibility: hidden;
+
+}
+
+.Opciones-menu:hover .selectCronica {
+    visibility: visible;
+}
+
+
+
+.Opciones-menu:hover {
+    background-color: #eafffb;
+    box-shadow: 0 -4px 10px 0 rgb(0 0 0 / 8%);
+    cursor: pointer;
+}
+
+.Opciones-menu:hover .Crnica-grupal {
+    color: #0e7b77;
+}
+
+.selectVolante {
+    background-color: #9c731a;
+    height: 5px;
+    width: 157px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    position: absolute;
+    margin-top: -8px !important;
+    visibility: hidden;
+
+}
+
+.Opciones-menu:hover .selectVolante {
+    visibility: visible;
+}
+
+
+.Opciones-menu:hover .Volante-de-Donacin-de-sangre {
+    color: #0e7b77;
+}
+
+.selectAviso {
+    background-color: #9c731a;
+    height: 5px;
+    width: 164px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    position: absolute;
+    margin-top: -8px !important;
+    visibility: hidden;
+
+}
+
+.Opciones-menu:hover .selectAviso {
+    visibility: visible;
+}
+
+.Opciones-menu:hover .Aviso-al-Ministerio-Pblico {
+    color: #0e7b77;
+}
+
+.selectConsulta {
+    background-color: #9c731a;
+    height: 5px;
+    width: 212px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    position: absolute;
+    margin-top: -8px !important;
+    visibility: hidden;
+
+}
+
+.Opciones-menu:hover .selectConsulta {
+    visibility: visible;
+}
+
+.Opciones-menu:hover .Consulta-de-Informe-de-Servicios-Profesionales {
+    color: #0e7b77;
+}
+
+
+.image-menu {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.Frame-4568 {
+    width: 180.6px;
+    height: 51px;
+    flex-grow: 0;
+    margin: 4.5px 1031.9px 4.5px 0;
+    display: flex;
+    padding-right: 6px;
+}
+
+.Subtract {
+
+
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    width: 86%;
+    height: 60px;
+    flex-grow: 0;
+    margin: -61px 0px 0 176.6px;
+    padding: 0 0 0 0.6px;
+    /* transform: rotate(-270.59deg); */
+    box-shadow: 0 -4px 10px 0 rgb(0 0 0 / 8%);
+    border: solid 1px #eee;
+    background-color: #fff;
+    display: flex;
+}
+
+.Rectangle-910 {
+    width: 50px;
+    height: 50px;
+    flex-grow: 0;
+    padding: 8px 9px 6px 5px;
+    transform: rotate(-360deg);
+    box-shadow: 0 6px 6px 0 rgba(63, 173, 180, 0.3);
+    background-color: #0e7b77;
+    border-radius: 5px;
+}
+
+.Bscar-paciente {
+    width: 112px;
+    height: 15px;
+    margin: 18.5px 0 0 6.5px;
+    transform: rotate(-360deg);
+    font-family: Montserrat;
+    font-size: 12px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: left;
+    color: #0e7b77;
+}
+
+.Crnica-grupal {
+    width: 90px;
+    height: 15px;
+    flex-grow: 0;
+    margin: 8px 2px 5.7px 2px;
+    transform: rotate(-360deg);
+    font-family: Montserrat;
+    font-size: 12px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: left;
+    color: #666;
+
+}
+
+.espacio-menu {
+    width: 110px;
+    height: 10px;
+    height: 60px;
+    margin: 12px 5% -13px 3%;
+    padding: 3.3px 0 0;
+    display: inherit;
+
+}
+
+.Volante-de-Donacin-de-sangre {
+    width: 123px;
+    height: 30px;
+    flex-grow: 0;
+
+    transform: rotate(-360deg);
+    font-family: Montserrat;
+    font-size: 12px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: left;
+    color: #666;
+}
+
+.Icon {
+    width: 7.1px;
+    height: 11.1px;
+    margin: 19.4px 0 20.5px 5px;
+    transform: rotate(-89.41deg);
+    box-shadow: 0 2px 2px 0 rgba(45, 188, 182, 0.4);
+    border: solid 0.4px #2dbcb6;
+    background-color: #2dbcb6;
+}
+
+.Aviso-al-Ministerio-Pblico {
+    width: 110px;
+    height: 30px;
+    flex-grow: 0;
+    margin: 0 0 3.9px 10px;
+    transform: rotate(-360deg);
+    font-family: Montserrat;
+    font-size: 12px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: left;
+    color: #666;
+}
+
+.Consulta-de-Informe-de-Servicios-Profesionales {
+    width: 158px;
+    height: 30px;
+    flex-grow: 0;
+    margin: 0 0 4px 10px;
+    transform: rotate(-360deg);
+    font-family: Montserrat;
+    font-size: 12px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: left;
+    color: #666;
+}
+
+.Vector1 {
+    width: 40px;
+    height: 31px;
+    margin: 0 5px 0 0;
+}
+
+.Vector2 {
+    width: 30px;
+    height: 36px;
+    margin: -3px 5px 0px 0;
+}
+
+.Vector3 {
+    width: 46px;
+    height: 46px;
+    margin: -7px 0px 0px -2px;
+}
+
+.Vector4 {
+    width: 12px;
+    height: 12px;
+    margin: 5px -12px 1px 18px;
+}
+
+.shape {
+    background: #63639c;
+    margin: 7% auto 0;
+}
+
+/*Hexágono*/
+#hexagono {
+    width: 40px;
+    height: 28px;
+    background: #eafffb;
+    position: absolute;
+    margin-left: 154px;
+    margin-top: 10px;
+}
+
+#hexagono::before {
+    content: "";
+    position: absolute;
+    top: -8px;
+    left: 0;
+    width: 0;
+    height: 0;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-bottom: 8px solid #eafffb;
+}
+
+#hexagono:after {
+    content: "";
+    position: absolute;
+    bottom: -8px;
+    left: 0;
+    width: 0;
+    height: 0;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-top: 8px solid #eafffb;
+}
