@@ -1,6 +1,8 @@
 import { ServiceService } from './busqueda-nss.service';
 import { Component } from '@angular/core';
 import { pacienteSeleccionado } from './paciente.interface';
+import { Router } from '@angular/router';
+import { AppTarjetaPresentacionService } from '../app-tarjeta-presentacion/app-tarjeta-presentacion.service';
 
 
 
@@ -36,7 +38,10 @@ export class BusquedaNssComponent {
 
   resultadoTotal: number = 0;
 
-  constructor(private ServiceService: ServiceService) {
+  constructor(private ServiceService: ServiceService,
+    private router: Router,
+    private tarjetaService: AppTarjetaPresentacionService) {
+
 
   }
 
@@ -44,6 +49,9 @@ export class BusquedaNssComponent {
 
     this.pacienteSeleccionado = obj;
 
+    this.tarjetaService.add(this.pacienteSeleccionado);
+
+    this.router.navigate(['tarjeta']);
     console.log(this.pacienteSeleccionado)
 
   }
