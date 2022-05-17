@@ -64,38 +64,56 @@ export class BusquedaNssComponent {
 
   get() {
 
-    this.ServiceService.getAll(this.url + this.txtNSS).subscribe({
-      next: (resp: any) => {
-        this.listaPacientes = resp.busquedanss.beneficiarios;
+    if (this.validaInput()) {
 
-        this.resultadoTotal = resp.busquedanss.registrosTotal;
+      this.muestraAlerta('<strong>Error.</strong>¡La longitud del NSS no es correcta, favor de verificar!',
+        'alert-danger', null
+      );
 
-        if (this.resultadoTotal == 0) {
+    } else {
 
-          this.errorBusqueda = true;
-          this.muestraAlerta('<strong>Sin resultados.</strong> Valide los filtros',
-            'alert-warning', null
-          );
+      this.ServiceService.getAll(this.url + this.txtNSS).subscribe({
+        next: (resp: any) => {
+          this.listaPacientes = resp.busquedanss.beneficiarios;
 
-        } else {
-          for (var i = 0; i < this.resultadoTotal; i++) {
-            this.isCollapsed[i] = true;
+          this.resultadoTotal = resp.busquedanss.registrosTotal;
+
+          if (this.resultadoTotal == 0) {
+
+            this.errorBusqueda = true;
+            this.muestraAlerta('<strong>Sin resultados.</strong> Valide los filtros',
+              'alert-warning', null
+            );
+
+          } else {
+            for (var i = 0; i < this.resultadoTotal; i++) {
+              this.isCollapsed[i] = true;
+            }
+
           }
 
+        }, error: (err) => {
+
+          this.muestraAlerta('<strong>Error de red.</strong> No fue posible conectar con la API de busqueda',
+            'alert-danger', null
+          );
+
+          console.log(err)
+          this.errorBusqueda = true;
+
+
         }
+      });
 
-      }, error: (err) => {
-
-        this.muestraAlerta('<strong>Error de red.</strong> No fue posible conectar con la API de busqueda',
-          'alert-danger', null
-        );
-
-        console.log(err)
-        this.errorBusqueda = true;
+    }
 
 
-      }
-    });
+  }
+
+  validaInput(): boolean {
+
+    return this.txtNSS.length != 10;
+
   }
 
   limpiar() {
