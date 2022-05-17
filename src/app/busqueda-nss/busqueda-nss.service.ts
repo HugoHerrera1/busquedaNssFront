@@ -8,7 +8,7 @@ import { Injectable } from '@angular/core';
 })
 export class ServiceService {
 
-  headers: any = new HttpHeaders({ 'Content-Type': 'application/json' });
+  // headers: any = new HttpHeaders({ 'Content-Type': 'application/json' });
   constructor(protected http: HttpClient) { }
 
   getAll(URL: any) {

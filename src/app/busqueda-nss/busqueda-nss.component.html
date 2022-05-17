@@ -1,4 +1,4 @@
-<div class="row" style="height: 900px; place-content: center; background-color: gray;">
+<div class="row" style="height: 900px; place-content: center; background-color: #f8f8f8;">
 
   <div class="Bg">
 
@@ -54,7 +54,7 @@
             Búsqueda de NSS
           </span>
 
-          <img src="./assets/hu002-busqueda/agenda.ico" class="buscaico">
+          <img src="./assets/hu002-busqueda/agenda3.png" class="buscaico">
 
         </div>
 
@@ -72,7 +72,10 @@
             <div class="Rectangle-960">
 
               <span class="resultados">
-                Resultados {{resultadoTotal}}
+                Resultados
+              </span>
+              <span class="resultados" style="font-weight: bold;">
+            {{resultadoTotal}}
               </span>
 
               <select class="form-select" [(ngModel)]="pageSize">
@@ -134,7 +137,7 @@
                   <td colspan="4" class="tableTd">
                     <div>
                       <table class=" subtable">
-                        <thead class="bg-primary subtable">
+                        <thead class="bg-primary subtable" style="background-color: #5f8cdc !important;">
                           <tr class="subtableTr">
                             <th style="width: 160px; text-align: left !important;">CURP</th>
                             <th style="width: 160px; text-align: left !important;">Fecha de nacimiento</th>
@@ -171,8 +174,6 @@
                     </div>
                   </td>
                 </ng-template>
-
-
               </tbody>
             </table>
 
@@ -183,6 +184,16 @@
                   screenReaderPaginationLabel="Pagination">
                 </pagination-controls>
               </div>
+
+            <!-- <div style=" border: 2px solid blue; width: 200px;;
+            padding: .5em;">
+
+</div> -->
+<span class="visDatos" style="width: auto; float: right;">
+  Paginas
+</span>
+
+
             </div>
 
           </ng-template>
@@ -190,7 +201,7 @@
             <div *ngIf="errorBusqueda ; then siEsError else noEsError"></div>
 
 
-            <ng-template #siEsError>
+            <ng-template #siEsError  style="overflow:hidden;" >
               <div class="errorimgdiv">
 
                 <img class="errorimg" src="./assets/hu002-busqueda/no encontrado.png">
