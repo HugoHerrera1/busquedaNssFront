@@ -4,7 +4,10 @@ import { HttpClientModule } from '@angular/common/http';
 import { DeclarationListEmitMode } from '@angular/compiler';
 import { BusquedaNssComponent } from './busqueda-nss/busqueda-nss.component';
 import { AppTarjetaPresentacionComponent } from './app-tarjeta-presentacion/app-tarjeta-presentacion.component';
-import { NuevaCronicaComponent } from './cronica-grupal/nueva-cronica/nueva-cronica/nueva-cronica.component';
+import { NuevaCronicaComponent } from './cronica-grupal/nueva-cronica/nueva-cronica.component';
+import { CCGrupalEspecificaComponent } from './cronica-grupal/c-cgrupal-especifica/c-cgrupal-especifica.component';
+
+
 
 const routes: Routes = [
   {path: 'busqueda', component: BusquedaNssComponent},

@@ -4,11 +4,6 @@ import { pacienteSeleccionado } from './paciente.interface';
 import { Router } from '@angular/router';
 import { AppTarjetaPresentacionService } from '../app-tarjeta-presentacion/app-tarjeta-presentacion.service';
 
-
-
-
-declare var $gmx: any;
-
 @Component({
   selector: 'app-busqueda-nss',
   templateUrl: './busqueda-nss.component.html',
@@ -20,15 +15,15 @@ export class BusquedaNssComponent {
 
   isCollapsed: boolean[] = [];
 
-  page = 1;
+  page: number = 1;
 
-  pageSize = 2;
+  pageSize: number = 2;
 
   alertMensaje: string = "";
   alertVisible: boolean = false;
   alertTipo: string = "";
 
-  url: string = 'http://localhost:8080/api/busquedanss/';
+
 
   txtNSS = "4382641109";
 
@@ -72,7 +67,7 @@ export class BusquedaNssComponent {
 
     } else {
 
-      this.ServiceService.getAll(this.url + this.txtNSS).subscribe({
+      this.ServiceService.getAll(this.txtNSS).subscribe({
         next: (resp: any) => {
           this.listaPacientes = resp.busquedanss.beneficiarios;
 
