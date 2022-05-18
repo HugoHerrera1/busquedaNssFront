@@ -28,7 +28,7 @@ export class BusquedaNssComponent {
   alertVisible: boolean = false;
   alertTipo: string = "";
 
-  url: string = 'http://localhost:8080/api/v1/mts-pacientes/busquedanss/';
+  url: string = 'http://localhost:8080/api/busquedanss/';
 
   txtNSS = "4382641109";
 

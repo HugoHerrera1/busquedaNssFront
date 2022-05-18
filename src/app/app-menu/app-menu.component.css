@@ -176,6 +176,7 @@
     box-shadow: 0 6px 6px 0 rgba(63, 173, 180, 0.3);
     background-color: #0e7b77;
     border-radius: 5px;
+    margin-left: 4px;
 }
 
 .Bscar-paciente {
@@ -298,7 +299,7 @@
 .Vector3 {
     width: 46px;
     height: 46px;
-    margin: -7px 0px 0px -2px;
+    margin: -4px 0px 0px -2px;
 }
 
 .Vector4 {
@@ -318,7 +319,7 @@
     height: 28px;
     background: #eafffb;
     position: absolute;
-    margin-left: 154px;
+    margin-left: 159px;
     margin-top: 10px;
 }
 

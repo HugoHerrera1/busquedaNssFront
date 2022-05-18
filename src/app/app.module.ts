@@ -11,6 +11,7 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import {NgxPaginationModule} from "ngx-pagination";
 import { AppTarjetaPresentacionComponent } from './app-tarjeta-presentacion/app-tarjeta-presentacion.component';
 import { CCGrupalEspecificaComponent } from './cronicaGrupal/c-cgrupal-especifica/c-cgrupal-especifica.component';
+import { NuevaCronicaComponent } from './cronica-grupal/nueva-cronica/nueva-cronica/nueva-cronica.component';
 
 
 
@@ -21,7 +22,8 @@ import { CCGrupalEspecificaComponent } from './cronicaGrupal/c-cgrupal-especific
     AppMenuComponent,
     AppAlertsComponent,
     AppTarjetaPresentacionComponent,
-    CCGrupalEspecificaComponent
+    CCGrupalEspecificaComponent,
+    NuevaCronicaComponent
   ],
   imports: [
     BrowserModule,

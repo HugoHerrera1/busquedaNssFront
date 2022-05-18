@@ -11,6 +11,7 @@ import { AppTarjetaPresentacionService } from './../app-tarjeta-presentacion/app
 export class AppTarjetaPresentacionComponent implements OnInit {
 
   paciente!: pacienteSeleccionado;
+  isCollapsed: boolean=true;
 
   constructor(private tarjetaServce: AppTarjetaPresentacionService) { }
 

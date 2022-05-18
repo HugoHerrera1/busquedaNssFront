@@ -1,0 +1,7 @@
+.Bg {
+    height: 218px;
+    flex-grow: 0;
+    background-color: #10312b;
+    display: grid;
+    place-content: center;
+}

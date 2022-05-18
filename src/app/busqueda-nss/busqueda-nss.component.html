@@ -10,8 +10,6 @@
 
     <div class="row">
 
-      <!-- <app-app-alerts>[alert]="alertInfo"</app-app-alerts>-->
-
       <div *ngIf="alertVisible">
 
         <div class="alert alert-dismissible alertCompl" [ngClass]="alertTipo">
@@ -28,8 +26,8 @@
 
       <div id="busqueda">
 
-        <input class="form-control matricula inputs" id="txtconsulta" placeholder="Escribir NSS paciente" type="number"
-          required minlength="4" [(ngModel)]="txtNSS"  />
+        <input class="form-control matricula inputs" id="txtconsulta" placeholder="Escribir NSS paciente" type="text"
+          required minlength="10" [(ngModel)]="txtNSS" />
 
         <button (click)="limpiar()" class="btn btn-default btuser boton">
           Limpiar
@@ -74,8 +72,8 @@
               <span class="resultados">
                 Resultados
               </span>
-              <span class="resultados" style="font-weight: bold;">
-            {{resultadoTotal}}
+              <span class="resultados2" style="font-weight: bold;">
+                {{resultadoTotal}}
               </span>
 
               <select class="form-select" [(ngModel)]="pageSize">
@@ -92,7 +90,7 @@
             </div>
 
             <table class="table " style="margin-bottom: 0px !important;">
-              <thead>
+              <thead style=" background: #f9f9f9;">
                 <tr>
                   <th style="width: 160px; padding-left: 33px !important;">NSS</th>
                   <th style="width: 600px; padding-left: 10px !important;">Paciente</th>
@@ -105,8 +103,8 @@
                 *ngFor="let beneficiario of listaPacientes | paginate:{itemsPerPage:pageSize,currentPage:page}; let i = index">
                 <tr style="border-collapse: unset !important;">
 
-                  <td class="link-texto" style="text-align: center !important; padding: 0px;">
-                    <a (click)=" elementoSeleccionado(beneficiario)">{{beneficiario.nss}}</a>
+                  <td class="link-texto" style="text-align: center !important; padding: 0px; color:#bbd5f2;">
+                    <span (click)=" elementoSeleccionado(beneficiario)">{{beneficiario.nss}}</span>
 
                   </td>
                   <td style="padding: 0px!important; padding-left: 13px !important;">{{beneficiario.paciente}}</td>
@@ -177,21 +175,21 @@
               </tbody>
             </table>
 
-            <div class="Rectangle-960" style="margin-top: 0px !important;  justify-content: center;">
+            <div class="Rectangle-9601"
+              style="margin-top: 0px !important;  justify-content: center; padding-left: 100px;">
 
               <div class="centr">
-                <pagination-controls class="my-pagination" (pageChange)="page = $event" previousLabel="" nextLabel=""
-                  screenReaderPaginationLabel="Pagination">
+                <pagination-controls style="margin-left: auto; margin-right: auto;" class="my-pagination"
+                  (pageChange)="page = $event" previousLabel="" nextLabel="" screenReaderPaginationLabel="Pagination">
                 </pagination-controls>
+
               </div>
 
-            <!-- <div style=" border: 2px solid blue; width: 200px;;
-            padding: .5em;">
+              <span class="pagina" style="float: right;">
+                Pagina
+              </span>
 
-</div> -->
-<span class="visDatos" style="width: auto; float: right;">
-  Paginas
-</span>
+              <div class="paginanum" style="float: right;">{{page}} </div>
 
 
             </div>
@@ -201,7 +199,7 @@
             <div *ngIf="errorBusqueda ; then siEsError else noEsError"></div>
 
 
-            <ng-template #siEsError  style="overflow:hidden;" >
+            <ng-template #siEsError style="overflow:hidden;">
               <div class="errorimgdiv">
 
                 <img class="errorimg" src="./assets/hu002-busqueda/no encontrado.png">
@@ -231,7 +229,7 @@
               </div>
 
               <table class="table ">
-                <thead>
+                <thead style=" background: #f9f9f9;">
                   <tr>
                     <th style="width: 160px; padding-left: 33px !important;">NSS</th>
                     <th style="width: 600px; padding-left: 10px !important;">Paciente</th>
@@ -240,7 +238,7 @@
                   </tr>
                 </thead>
               </table>
-              <div class="Rectangle-9600">
+              <div class="Rectangle-9600" style="    background: #f9f9f9;">
                 <span class="sinInfolbl">
                   sin informaci&oacute;n disponible
                 </span>
