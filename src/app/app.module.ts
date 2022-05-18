@@ -12,6 +12,7 @@ import {NgxPaginationModule} from "ngx-pagination";
 import { AppTarjetaPresentacionComponent } from './app-tarjeta-presentacion/app-tarjeta-presentacion.component';
 import { CCGrupalEspecificaComponent } from './cronica-grupal/c-cgrupal-especifica/c-cgrupal-especifica.component';
 import { NuevaCronicaComponent } from './cronica-grupal/nueva-cronica/nueva-cronica.component';
+import { CronicaGuardadaComponent } from './cronica-grupal/cronica-guardada/cronica-guardada.component';
 
 
 
@@ -23,7 +24,8 @@ import { NuevaCronicaComponent } from './cronica-grupal/nueva-cronica/nueva-cron
     AppAlertsComponent,
     AppTarjetaPresentacionComponent,
     CCGrupalEspecificaComponent,
-    NuevaCronicaComponent
+    NuevaCronicaComponent,
+    CronicaGuardadaComponent
   ],
   imports: [
     BrowserModule,
