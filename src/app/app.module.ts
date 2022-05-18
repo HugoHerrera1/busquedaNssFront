@@ -10,6 +10,7 @@ import { AppAlertsComponent } from './app-alerts/app-alerts.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import {NgxPaginationModule} from "ngx-pagination";
 import { AppTarjetaPresentacionComponent } from './app-tarjeta-presentacion/app-tarjeta-presentacion.component';
+import { CCGrupalEspecificaComponent } from './cronicaGrupal/c-cgrupal-especifica/c-cgrupal-especifica.component';
 
 
 
@@ -19,7 +20,8 @@ import { AppTarjetaPresentacionComponent } from './app-tarjeta-presentacion/app-
     BusquedaNssComponent,
     AppMenuComponent,
     AppAlertsComponent,
-    AppTarjetaPresentacionComponent
+    AppTarjetaPresentacionComponent,
+    CCGrupalEspecificaComponent
   ],
   imports: [
     BrowserModule,

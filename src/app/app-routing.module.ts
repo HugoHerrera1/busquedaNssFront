@@ -1,3 +1,4 @@
+import { CCGrupalEspecificaComponent } from './cronicaGrupal/c-cgrupal-especifica/c-cgrupal-especifica.component';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { HttpClientModule } from '@angular/common/http';
@@ -8,6 +9,7 @@ import { AppTarjetaPresentacionComponent } from './app-tarjeta-presentacion/app-
 const routes: Routes = [
   {path: 'busqueda', component: BusquedaNssComponent},
   {path: 'tarjeta', component: AppTarjetaPresentacionComponent},
+  {path: 'busquedaEspecifica', component: CCGrupalEspecificaComponent},
 ];
 
 @NgModule({
