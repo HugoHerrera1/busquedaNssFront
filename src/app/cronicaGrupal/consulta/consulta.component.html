@@ -1,0 +1,204 @@
+<div class="row" style="height: 900px; place-content: center; background-color: gray;">
+
+  <div class="Bg">
+
+    <app-app-menu></app-app-menu>
+
+  </div>
+
+  <div class="Rectangle-85">
+    <div style="margin-right: 20px;">
+        <br> <button class="btn btn-primary btn-sm pull-right" type="submit" routerLink="modulo/ver">Nueva cronica</button>
+      </div>
+        <div style="margin-left: 20px;">
+        <span class="Cronologa">
+          Consulta Crónicas Grupales
+        </span><hr>
+
+        <div class="row">
+          <div class="col-md-4">
+          <label class= "form" style="font-weight: bold;font-size: 16px;">
+            Servicio:
+               </label>
+               <select class="form" aria-label="Servicio">
+                 <option selected >  Trabajo social</option>
+                 <option value="1">Trabajo social</option>
+                   <option value="2">Agenda digital</option>
+                </select>
+                <u></u>
+              </div>
+         
+
+          <div class="col-md-4">
+            <label class= "form-text-center" style="font-weight: bold;font-size: 16px;">
+              Turno:
+                 </label>
+                 <select class="form-center" aria-label="Servicio">
+                   <option selected > </option>
+                   <option value="1">Matutino</option>
+                   <option value="2">Vespertino</option>
+                 </select>
+                 <a></a>
+          </div>
+
+          <div class="col-md-4">
+            <label class= "form-right" style="font-weight: bold;font-size: 16px;">
+              Grupo:
+                 </label>
+                 <select class="form-right" aria-label="Servicio">
+                   <option selected >  </option>
+                   <option value="1">Tour quirugico</option>
+                 </select>
+                 <p></p>
+                </div>
+          </div><br>
+
+          <div class="row">
+            <div class="col-md-4">
+            <label class= "form" style="font-weight: bold;font-size: 16px;">
+              Lugar:
+                 </label>
+                 <select class="form" aria-label="Servicio">
+                   <option selected > seleccionar lugar</option>
+                   <option value="1">One</option>
+                   <option value="2">Two</option>
+                 </select>
+                 <s></s>
+                </div>
+           
+  
+            <div class="col-md-4">
+              <label class= "form-center" style="font-weight: bold;font-size: 16px;">
+                Fecha:
+                   </label>
+                   <div class="form-calen datepicker-group" aria-label="Servicio">
+                    <input class="form-control" id="calendar" type="text"  >
+                    <span class="glyphicon glyphicon-calendar" aria-hidden="true"
+                    style="  top: -4px !important;"></span>
+                  </div>
+            </div>
+
+            <div class="col-md-4">
+              <label class= "form-right" style="font-weight: bold;font-size: 16px;">
+                Cronica especifica asociada:
+                   </label>
+                   <div class="form-right">
+                    <label>
+                      <input type="radio" name="radio-01" value="opcion-01" checked="checked"> Si
+                    </label>
+                    <label>
+                      <input type="radio" name="radio-01" value="opcion-02" checked="checked"> No
+                    </label>
+                  </div>
+                  </div>
+                  
+                </div>
+            <br><br>
+
+          <div style="margin-right: 500px;">
+          <span class="resultados">
+            <b>Busquedas anteriores</b> {{''}}
+          </span>
+        </div>
+
+        <div style="margin-right: 20px;">
+          <select class="form-select" >  
+            <option [ngValue]="2">2</option>
+            <option [ngValue]="4">4</option>
+            <option [ngValue]="6">6</option>
+          </select>
+          <i></i>
+        </div>
+      
+        
+
+          <span class="visDatos" style="width: auto; float: right;">
+            Visualizar datos
+          </span>
+
+        </div>
+
+        <div style="margin-left: 20px;" >
+          <div style="margin-right: 20px;" >
+        <table class="table " style="margin-bottom: 0px !important;">
+          <thead>
+            <tr>
+              <th type="date" style="width: 160px; padding-left: 33px !important;">Fecha</th>
+              <th style="width: 160px; padding-left: 33px !important;">Grupo</th>
+              <th style="width: 160px; padding-left: 33px !important;">Hora</th>
+              <th style="width: 160px; padding-left: 33px !important;">Modalidad</th>
+              <th style="width: 160px; padding-left: 33px !important;">Total participantes</th>
+              <th style="width: 160px; padding-left: 33px !important;">Participantes que asistieron</th>
+              <th style="text-align: center !important;">Estatus</th>
+            </tr>
+          </thead>
+          <tbody>
+              <tr>
+                <th scope="row">1</th>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <th scope="row">2</th>
+                <td>Jacob</td>
+                <td>Thornton</td>
+                <td>@fat</td>
+                <td>Jacob</td>
+                <td>Thornton</td>
+                <td>@fat</td>
+              </tr>
+              <tr>
+                <th scope="row">3</th>
+                <td>Jacob</td>
+                <td>Thornton</td>
+                <td>@fat</td>
+                <td>Jacob</td>
+                <td>Thornton</td>
+                <td>@fat</td>
+              </tr>
+              <tr>
+                <th scope="row">4</th>
+                <td>Jacob</td>
+                <td>Thornton</td>
+                <td>@fat</td>
+                <td>Jacob</td>
+                <td>Thornton</td>
+                <td>@fat</td>
+              </tr>
+              <tr>
+               <th scope="row">5</th>
+                <td>Mark</td>
+                <td>Otto</td>
+                <td>@mdo</td>
+                <td>Jacob</td>
+                <td>Thornton</td>
+                <td>@fat</td>
+             </tr>
+             <tr>
+               <th scope="row">6</th>
+               <td>Mark</td>
+               <td>Otto</td>
+               <td>@mdo</td>
+               <td>Mark</td>
+               <td>Otto</td>
+               <td>@mdo</td>
+             </tr>
+             <tr>
+               <th scope="row">7</th>
+                <td>Mark</td>
+                <td>Otto</td>
+                <td>@mdo</td>
+                <td>Jacob</td>
+                <td>Thornton</td>
+                <td>@fat</td>
+             </tr>
+          </tbody>
+        </table>
+      </div>
+        </div>
+      </div>
+        
